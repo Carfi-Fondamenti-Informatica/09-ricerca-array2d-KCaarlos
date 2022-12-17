@@ -8,29 +8,28 @@ int main(){
     char name[20];
     int pos = 0;
 
-    for (int i = 0; i < 10; i++){
-        
-        for (int j = 0; j < 20; j++){
-             
-             name[j] = ' ';
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 20; j++)
+        {
+            name[j] = ' ';
             listone[i][j] = ' ';
         }
     }
 
-    for (int i = 0; i < 10; i++){
-    
+    for (int i = 0; i < 10; i++)
+    {
         cin >> listone[i];
     }
     cin >> name;
 
-    if (verifica(listone , name, pos)){
-       
-       cout << pos<< endl;
+    if (verifica(listone , name, pos))
+    {
+        cout << pos;
     }
-    else{
-    
+    else
+    {
         cout << "non presente"<<endl;
     }
 
     return 0;
-]
