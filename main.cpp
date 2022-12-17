@@ -4,32 +4,28 @@ using namespace std;
 
 int main(){
 
-    char listone[10][20];
-    char name[20];
-    int pos = 0;
+    char lista[10][20];
+    char nome[20];
+    int a = 0;
 
-    for (int i = 0; i < 10; i++)
-    {
-        for (int j = 0; j < 20; j++)
-        {
-            name[j] = ' ';
-            listone[i][j] = ' ';
+    for (int i = 0; i < 10; i++){
+        for (int j = 0; j < 20; j++){
+            nome[j] = ' ';
+            lista[i][j] = ' ';
         }
     }
 
-    for (int i = 0; i < 10; i++)
-    {
-        cin >> listone[i];
+    for (int i = 0; i < 10; i++){
+        cin >> lista[i];
     }
-    cin >> name;
+    cin >> nome;
 
-    if (verifica(listone , name, pos))
-    {
-        cout << pos;
+    if (controllo(lista, nome, a)){
+        cout << a;
     }
-    else
-    {
+    else{
         cout << "non presente"<<endl;
     }
 
     return 0;
+}
